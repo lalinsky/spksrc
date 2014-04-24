@@ -1,3 +1,4 @@
 bin/fpcalc
 include/chromaprint.h
 lib/libchromaprint.a
+lib/pkgconfig/libchromaprint.pc
