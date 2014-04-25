@@ -18,7 +18,7 @@ endif
 ifeq ($(findstring $(ARCH),bromolow cedarview evansport x86),$(ARCH))
 FFMPEG_ARCH = x86
 endif
-ifeq ($(findstring $(ARCH),qoriq),$(ARCH))
+ifeq ($(findstring $(ARCH),qoriq powerpc ppc),$(ARCH))
 FFMPEG_ARCH = ppc
 endif
 ifeq ($(strip $(FFMPEG_ARCH)),)
@@ -178,7 +178,6 @@ CONFIGURE_ARGS = \
 	--enable-parser=vp8 \
 	--disable-asm \
 	--enable-cross-compile \
-    --enable-memalign-hack \
 	--arch=$(FFMPEG_ARCH) \
 	--target-os=linux \
 	--cross-prefix=$(TC_PATH)$(TC_PREFIX) \

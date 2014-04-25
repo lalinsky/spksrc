@@ -5,7 +5,7 @@
  endif()
  if(UNIX)
 -    set(EXTRA_LIBS ${EXTRA_LIBS} -lpthread)
-+    set(EXTRA_LIBS ${EXTRA_LIBS} -lpthread -ldl -lmp3lame -lx264)
++    set(EXTRA_LIBS ${EXTRA_LIBS} -lpthread -ldl)
  endif()
  
  set(CMAKE_REQUIRED_LIBRARIES

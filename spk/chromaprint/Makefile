@@ -1,7 +1,6 @@
 SPK_NAME = chromaprint
 SPK_VERS = 1.1
 SPK_REV = 1
-#SPK_ICON = src/ffmpeg.png
 DSM_UI_DIR = app
 CHANGELOG = initial version
 
@@ -20,8 +19,6 @@ SSS_SCRIPT       = src/dsm-control.sh
 ADDITIONAL_SCRIPTS =
 
 INSTALL_PREFIX = /usr/local/$(SPK_NAME)
-
-PLIST_TRANSFORM = grep -E '(chromaprint|fpcalc)'
 
 
 include ../../mk/spksrc.spk.mk

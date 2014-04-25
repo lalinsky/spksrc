@@ -5,7 +5,7 @@ PKG_DIST_NAME = $(PKG_NAME)-$(PKG_VERS).$(PKG_EXT)
 PKG_DIST_SITE = https://bitbucket.org/acoustid/chromaprint/downloads
 PKG_DIR = $(PKG_NAME)-$(PKG_VERS)
 
-DEPENDS = cross/ffmpeg
+DEPENDS = cross/chromaprint-ffmpeg
 
 HOMEPAGE = http://acoustid.org/chromaprint
 COMMENT  = Chromaprint is the core component of the AcoustID project. It is a client-side library that implements a custom algorithm for extracting fingerprints from any audio source.
